@@ -1,0 +1,82 @@
+.logo {
+  height: 10em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #1d2f3eaa);
+}
+
+.App {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.read-the-docs {
+  color: #aaa;
+}
+
+.hexaPlus {
+  color: #213547;
+}
+
+.title {
+  font-size: 3.2em;
+  line-height: 1;
+  font-weight: bold;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.flowContainer {
+  height: calc(1em + 15px * 2);
+  overflow: hidden;
+}
+
+.flower {
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s ease;
+  animation: flower 5s ease infinite;
+}
+
+.flower > div {
+  height: 1em;
+  padding: 15px;
+}
+
+@keyframes flower {
+  0% {
+    transform: translateY(calc(100% / 4 * 0 * -1));
+  }
+  20% {
+    transform: translateY(calc(100% / 4 * 0 * -1));
+  }
+  33% {
+    transform: translateY(calc(100% / 4 * 1 * -1));
+  }
+  53% {
+    transform: translateY(calc(100% / 4 * 1 * -1));
+  }
+  66% {
+    transform: translateY(calc(100% / 4 * 2 * -1));
+  }
+  86% {
+    transform: translateY(calc(100% / 4 * 2 * -1));
+  }
+  99% {
+    transform: translateY(calc(100% / 4 * 3 * -1));
+  }
+  99.9999% {
+    transform: translateY(calc(100% / 4 * 3 * -1));
+  }
+  100% {
+    transform: translateY(calc(100% / 4 * 0 * -1));
+  }
+}
